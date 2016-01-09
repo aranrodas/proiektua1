@@ -45,12 +45,13 @@ import java.awt.image.renderable.RenderableImage;
 public class frmBubbleShooter extends JFrame {
 
 	private JPanel contentPane;
-	private ArrayList<clscarita>[][] bolas;
+	//private ArrayList<clscarita>[][] bolas;
 	private clscarita miBola; 
 	private JLabel bola;
 	private JPanel panel;
-	private String[] dibujoBolas = {"C:\\temp\\bola.png","C:\\temp\\bolaRosa.png","C:\\temp\\bolaRoja.png"};
-	private int nivel;
+	private String[] dibujoBolas = {"C:\\temp\\emoticonos\\carita2.png","C:\\temp\\emoticonos\\carita3.png","C:\\temp\\emoticonos\\carita5.png","C:\\temp\\emoticonos\\carita6.png","C:\\temp\\emoticonos\\carita7.png","C:\\temp\\emoticonos\\carita8.png", "C:\\temp\\emoticonos\\carita9.png", "C:\\temp\\emoticonos\\carita10.png", "C:\\temp\\emoticonos\\carita11.png", "C:\\temp\\emoticonos\\carita12.png"};
+	//private int nivel;
+	
 	
 
 	/**
@@ -90,7 +91,7 @@ public class frmBubbleShooter extends JFrame {
 //		bola.setBounds(200, 209, 31, 32);
 //		panel.add(bola);
 		
-		crearMatriz();
+		//crearMatriz();
 		crearBola();
 		
 		panel.addMouseListener(new MouseAdapter() {
@@ -118,42 +119,42 @@ public class frmBubbleShooter extends JFrame {
 		crearBola();
 	}
 	
-	private void crearMatriz ()	{
-		
-		
-		//bolas = new ArrayList<clscarita>[x][y];
-		
-		nivel=1;
-		int x = 0; //matrizek zenbat ilara izango ditun
-		int y=10;//matrizean luzera (zenbat bola kabituko dian luzeran)
-		
-		int i;
-		
-		if (nivel== 1)
-			{
-			x= 2; //hiru ilara sortzeko
-			}
-	
-		if (nivel== 2)
-			{
-				x=3; //lau ilara sortzeko
-			}
-		 if(nivel == 3)
-			 {
-				 x=5; //bost ilara sortzeko
-			 }
-		 
-		 
-		 for (i=0;i <y;i++)
-		 {
-			 for(i=0; i <x ; i++)
-			 {
+//	private void crearMatriz ()	{
+//		
+//		
+//		//bolas = new ArrayList<clscarita>[x][y];
+//		
+//		nivel=1;
+//		int x = 0; //matrizek zenbat ilara izango ditun
+//		int y=10;//matrizean luzera (zenbat bola kabituko dian luzeran)
+//		
+//		int i;
+//		
+//		if (nivel== 1)
+//			{
+//			x= 2; //hiru ilara sortzeko
+//			}
+//	
+//		if (nivel== 2)
+//			{
+//				x=3; //lau ilara sortzeko
+//			}
+//		 if(nivel == 3)
+//			 {
+//				 x=5; //bost ilara sortzeko
+//			 }
+//		 
+//		 
+//		 for (i=0;i <y;i++)
+//		 {
+//			 for(i=0; i <x ; i++)
+//			 {
+////				
+////				Random indImagen = new Random();
+////				int a= indImagen.nextInt(dibujoBolas.length);
+////				bolas[x][y].setIcon(new ImageIcon(dibujoBolas[a].toString()));
 //				
-//				Random indImagen = new Random();
-//				int a= indImagen.nextInt(dibujoBolas.length);
-//				bolas[x][y].setIcon(new ImageIcon(dibujoBolas[a].toString()));
-				
-			 }
-		 }
-	}
+//			 }
+//		 }
+//	}
 }
